@@ -1,0 +1,132 @@
+h1{
+    color: blueviolet;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,700');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(0, 255, 179);
+    margin: auto;
+    padding: 2em;
+    text-align: center;
+}
+button{
+    padding: 1em;
+    border-radius: .2em;
+    outline: none;
+    background-color: #EEE;
+    border: none;
+    color: #555;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 0em 0em 3em rgba(0,0,0,0);
+} 
+button:disabled{
+    background-color: #EEE;
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.3);
+}
+/* DEFAULT button */
+.blur-hover:hover:enabled{
+    color: rgba(0, 0, 0, 0.3);
+    box-shadow: .1em .1em 3em rgba(200, 200, 200, 0.5);
+}
+.whiten-hover:hover:enabled{
+    color: rgb(150, 150, 150);
+    background:#fff;
+    box-shadow: .1em .1em 3em rgba(0,0,0, 0.2);
+}
+.rectangalize-hover:hover:enabled{
+    border-radius: 0em;
+}
+/* GREEN button */
+.green-button{
+    background-color: rgb(202, 242, 150);
+    color: rgba(055, 055, 055, 0.7);
+}
+.green-button.blur-hover:hover:enabled{
+    color: rgba(055, 055, 055, 0.3);
+    box-shadow: .1em .1em 3em rgba(202, 242, 150, 0.7);
+}
+.green-button.whiten-hover:hover:enabled{
+    color: rgb(164, 196, 121);
+    background:#fff;
+    box-shadow: .1em .1em 3em rgba(0,0,0, 0.2);
+}
+/* ORANGE button */
+.orange-button{
+    background-color: rgb(244, 162, 97);
+    color: rgba(055, 055, 055, 0.7);
+}
+.orange-button.blur-hover:hover:enabled{
+    color: rgba(055, 055, 055, 0.3);
+    box-shadow: .1em .1em 3em rgba(244, 162, 97, 0.5);
+}
+.orange-button.whiten-hover:hover:enabled{
+    color: rgb(244, 162, 97);
+    background:#fff;
+    box-shadow: .1em .1em 3em rgba(0,0,0, 0.2);
+}
+/* BLACK button */
+.black-button{
+    background-color: rgb(89, 95, 114);
+    color: rgba(255, 255, 255, .8);
+}
+.black-button.blur-hover:hover:enabled{
+    color: rgba(255, 255, 255, .3);
+    box-shadow: .1em .1em 3em rgba(89, 95, 114, .3);
+}
+.black-button.whiten-hover:hover:enabled{
+    color: rgb(89, 95, 114);
+    background:#fff;
+    box-shadow: .1em .1em 3em rgba(0,0,0, 0.2);
+}
+/* [YES-OR-NO]-input */
+.yes-or-no-field{
+    display: none;
+    position: relative;
+}
+
+.yes-button{
+    background-color: rgb(202, 242, 150);
+    text-align: left;
+    padding-right: 2em;
+    z-index: 1;
+    position: relative;
+}
+.yes-button:disabled, .no-button:disabled{
+    background-color: #ddd;
+}
+.or-button{
+    background: #eee;
+    text-align: center;
+    padding: .85em;
+    border-radius: 3em;
+    border: .2em solid #fff;
+    margin: -1em;
+    cursor: default;
+    font-weight: 800;
+    color: rgba(0,0,0,0.2);
+    z-index: 2;
+    position: relative;
+}
+.no-button{
+    background-color: rgb(243, 141, 104);
+    text-align: right;
+    padding-left: 2em;
+    z-index: 1;
+    position: relative;
+}
+/* Class created by anyone */
+.custom-class{
+    background: #DE80BC;
+    color:#fff;
+}
