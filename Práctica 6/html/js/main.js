@@ -7,7 +7,7 @@ bLogueo.addEventListener('click', function() {
     parametros.append('Prtemail', document.getElementById('email').value);
     parametros.append('Prtpassword', document.getElementById('password').value);
     //alert (parametros);
-    axios.get('http://127.0.0.1:4567', parametros);
+    axios.get('http://127.0.0.1:4567/hello/', parametros);
     .then(function (response){
         console.log(response)
     })
