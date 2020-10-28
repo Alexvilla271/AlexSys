@@ -43,6 +43,12 @@ public class App
             return "Hello: " + request.params(":name");
         });
 
+        post("/otro", (request, response) -> {
+            JsonParser parser= new JsonParser();
+            
+
+        });
+
 
     }
 }
